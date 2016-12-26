@@ -7,6 +7,24 @@
     <link rel="icon" type="image/png" href="daigaku_sverige_cropped.png" />
 </head>
 <body>
+<script>
+    var msg = new SpeechSynthesisUtterance();
+//    var voices = window.speechSynthesis.getVoices();
+//    msg.voice = voices['kyoko']; // Note: some voices don't support altering params
+//    msg.voiceURI = 'native';
+//    msg.volume = 1; // 0 to 1
+//    msg.rate = 1; // 0.1 to 10
+//    msg.pitch = 2; //0 to 2
+    msg.text = 'こんにちは';
+    msg.lang = 'ja-JP';
+
+    msg.onend = function(e) {
+        console.log('Finished in ' + event.elapsedTime + ' seconds.');
+    };
+
+//    speechSynthesis.speak(msg);
+
+</script>
 <table>
     <tr><th>kanji</th><th>reading</th><th>svenska</th><th>SVG</th><th>kanji</th><th>reading</th><th>svenska</th><th>SVG</th></tr>
     <tr>
@@ -233,5 +251,12 @@
         <td>着</td><td>き<br>ぎ<br>つ</td><td>anlända<br>bära kläder</td><td><object data="svg/07740.svg" type="image/svg+xml"></object></td>
     </tr>
 </table>
+<footer>
+    <p>We would like to thank the Kanji VG project (http://kanjivg.tagaini.net/) for their contribution to the open source world. We are not associated with Kanji VG, just users.
+        The kanji svg files (i.e. the kanji drawings with stroke order) are used by permission under the following licens:</p>
+    <h4>Licence</h4>
+    <p>KanjiVG is copyright © 2009-2015 Ulrich Apel and released under the Creative Commons Attribution-Share Alike 3.0 license.<br>
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">https://creativecommons.org/licenses/by-sa/3.0/</a></p>
+</footer>
 </body>
 </html>
