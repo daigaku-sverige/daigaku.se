@@ -10,3 +10,7 @@ h1, h2, p, td {
 td {
     font-size: x-large;
 }
+
+.smaller {
+    font-size: medium;
+}
