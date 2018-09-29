@@ -21,7 +21,7 @@ material från olika böcker i undervisningen. T ex använder Göteborgs Univers
  lika effektiv, men det är för tidigt att säga om det stämmer.</p>
 <h3>Ordlistan</h3>
 <p>Listan med glosor är anpassad för övningarna, och är inte lämpad som elektroniskt lexikon. Översättningarna är
-et till ett, och vill men ha flera betydelser för samma ord måste man representera det med flera glosor. Det finns
+ett till ett, och vill men ha flera betydelser för samma ord måste man representera det med flera glosor. Det finns
 många glosor som inte hör till någon övning. Vi har hämtat de c:a 16,000 glosor från Jmdict, som har svensk översättning,
 men bara ett fåtal av dessa används för närvarande. De glosor som används är mestadels min egen översättning.</p>
 <h2>Ett bra komplement till undervisning</h2>
@@ -38,5 +38,15 @@ för svenska studenter som vill lära sig japanska.</p>
 <p>Öva med Gakusei på mobilen! Fungerar t o m bättre på mobila enheter än på laptops.</p>
 <h2>Anonymitet</h2>
 <p>Gakusei lagrar ingen personlig data om sina användare, det enda som behövs är ett användarnamn.</p>
+<p>Det säkraste sättet att skydda personuppgifter är att inte ha dem överhuvudtaget.</p>
+<p>Därför efterfrågar vi inga personuppgifter, det som sparas för en användare är användarnamn, lösenordshash*, och övningsresultat.</p>
+<p>Varför ha lösenord alls, om vi nu inte hanterar någon känslig information? Det vi vill skydda mot är i första hand
+att användare av misstag går in på andras konton, men även medvetet sabotage. Att det dessutom blir svårt att komma åt
+andras anonyma resultat är bara en bieffekt.</p>
+<p>Det är möjligt att vi i framtiden ändrar vår policy. T ex kanske vi vill kunna erbjuda lösenordsåterställning om man glömt sitt
+lösenord, men vi har inga sådan planer för närvarande.</p>
+<p>*Lösenordshash: Numera lagras aldrig lösenord direkt i databasen. Istället använder man en matematisk funktion för att skapa
+en hash. Varje gång man försöker logga in, använder man samma matematiska funktion på det inmatade lösenordet.
+    Sedan jämförs resultet med den lagrade hashen. På det sättet vet ingen, inte ens databasägaren, vad lösenordet är.</p>
 </body>
 </html>
